@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>PAMS: Enter New Aspiration</title>
+		<link rel="stylesheet" type="text/css" href="main1.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<h1>Register New Aspiration</h1>
+		<form action="recordAspiration.php" method="POST" id="aspiForm">
+			<table>
+				<tr>
+					<td>Aspiration</td>
+					<td><textarea name="formAspi" rows="3" cols="50" form="aspiForm"></textarea></td>
+				</tr>
+				<tr>
+					<td>Start Date</td>
+					<td><input type="date" name="formStartDate" ></td>
+				</tr>
+				<tr>
+					<td>Due Date</td>
+					<td><input type="date" name="formDueDate"></td>
+				</tr>
+				<tr>
+					<td>Priority</td>
+					<td>
+						<select name="formPrio">
+							<option value="High">High</option>
+							<option value="Medium">Medium</option>
+							<option value="Low">Low</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Status</td>
+					<td>
+						<select name="formStatus">
+							<option value="Open">Open</option>
+							<option value="WIP">In Progress</option>
+							<option value="Achieved">Achieved</option>
+							<option value="Gave Up!">Gave up!</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type ="submit"></td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>
